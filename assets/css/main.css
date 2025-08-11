@@ -1451,8 +1451,9 @@ section,
   color: var(--accent-color);
 }
 
-.img-fluid.rounded {
-  border-radius: 50px;
+@media (max-width: 576px) {
+  #lang-switcher { top: 65px !important; }
+  #theme-switcher { top: 65px !important; }
 }
 
 /* === DARK MODE: core variables === */
