@@ -73,6 +73,6 @@ function initTypedIfNeeded() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const lang = localStorage.getItem('lang') || 'en';
+  const lang = localStorage.getItem('lang') || 'ru';
   await setLanguage(lang);
 });
