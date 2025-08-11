@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <div id="lang-switcher" style="position: fixed; top: 10px; right: 20px; z-index: 999;">
+    <button onclick="setLanguage('uz')" class="btn btn-link p-0 mx-1">
+      <span class="fi fi-uz" title="Oʻzbek" style="font-size: 1.5rem;"></span>
+    </button>
+    <button onclick="setLanguage('ru')" class="btn btn-link p-0 mx-1">
+      <span class="fi fi-ru" title="Русский" style="font-size: 1.5rem;"></span>
+    </button>
+    <button onclick="setLanguage('en')" class="btn btn-link p-0 mx-1">
+      <span class="fi fi-gb" title="English" style="font-size: 1.5rem;"></span>
+    </button>
+  </div>
+  <header class="header d-flex flex-column justify-content-center" id="header">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav class="navmenu" id="navmenu">
+      <ul>
+        <li>
+          <a class="active" href="/index.html#hero">
+            <i class="bi bi-house navicon"></i>
+            <span data-i18n="nav_home"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html#about">
+            <i class="bi bi-person navicon"></i>
+            <span data-i18n="nav_about"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html#resume">
+            <i class="bi bi-file-earmark-text navicon"></i>
+            <span data-i18n="nav_resume"></span>
+          </a>
+        </li>
+        <li>
+          <a href="/index.html#portfolio">
+            <i class="bi bi-images navicon"></i>
+            <span data-i18n="nav_portfolio"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-i18n="home"></a></li>
+            <li class="current" data-i18n="portfolio_details_title"></li>
+          </ol>
+        </nav>
+        <h1 data-i18n="portfolio_details_title"></h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3 data-i18n="portfolio_info_title"></h3>
+              <ul>
+                <li><strong data-i18n="portfolio_info_category"></strong></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer class="footer position-relative light-background" id="footer">
+    <div class="container">
+      <h3 class="sitename" data-i18n="name_title"></h3>
+      <p data-i18n="footer_text"></p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://t.me/MrDipper">
+          <i class="bi bi-telegram"></i>
+        </a>
+        <a href="https://x.com/mrdipper8">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://www.instagram.com/mr.dipper.x.aki/">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="linkedin.com/in/akmaljon-khidoyatov-79884b25a">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/MrDipperX">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Сopyright</span>
+          <strong class="px-1 sitename">MrDipper</strong>
+          <span>All rights reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script defer="True" src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // -------- 1) Берём slug из URL --------
+    function getSlug() {
+      const sp = new URLSearchParams(location.search);
+      return sp.get('p') || (location.hash ? location.hash.slice(1) : null);
+    }
+    const SLUG = getSlug() || 'TrackInfo';
+    
+    // -------- 2) Карта изображений и метаданных по проектам --------
+    // Тут укажи свои реальные пути к картинкам и категорию/тэги (если нужно)
+    const PROJECTS = {
+      'TrackInfo': {
+        images: [
+          'assets/img/portfolio/trackinfo-1.png',
+          'assets/img/portfolio/trackinfo-2.png',
+          'assets/img/portfolio/trackinfo-3.png',
+          'assets/img/portfolio/trackinfo-4.png',
+          'assets/img/portfolio/trackinfo-5.png'
+        ],
+        category: 'Web app'
+      },
+      'UnionShop': {
+        images: [
+          'assets/img/portfolio/shop-1.png',
+          'assets/img/portfolio/shop-2.png',
+          'assets/img/portfolio/shop-3.png',
+          'assets/img/portfolio/shop-4.png',
+          'assets/img/portfolio/shop-5.png',
+          'assets/img/portfolio/shop-6.png',
+          'assets/img/portfolio/shop-7.png'
+        ],
+        category: 'E-commerce'
+      },
+      'PiimaMonitoring': {
+        images: [
+          'assets/img/portfolio/piima-1.png',
+          'assets/img/portfolio/piima-2.png',
+          'assets/img/portfolio/piima-3.png',
+          'assets/img/portfolio/piima-4.png',
+          'assets/img/portfolio/piima-5.png'
+        ],
+        category: 'Analytics'
+      },
+      'Portfolio': {
+        images: [
+          'assets/img/portfolio/portfolio-1.png',
+          'assets/img/portfolio/portfolio-2.png',
+          'assets/img/portfolio/portfolio-3.png',
+          'assets/img/portfolio/portfolio-4.png'
+        ],
+        category: 'Analytics'
+      },
+      'VeMeet': {
+        images: [
+          'assets/img/portfolio/vemeet-1.png',
+          'assets/img/portfolio/vemeet-2.png',
+          'assets/img/portfolio/vemeet-3.png'
+        ],
+        category: 'Analytics'
+      },
+      'ETicket': {
+        images: [
+          'assets/img/portfolio/eticket-1.png',
+        ],
+        category: 'Analytics'
+      }
+      // добавляй остальные проекты по аналогии
+    };
+    
+    // -------- 3) Рендер слайдера и текстов --------
+    function renderDetails() {
+      const data = PROJECTS[SLUG];
+      if (!data) {
+        console.warn('Unknown project slug:', SLUG);
+        return;
+      }
+    
+      // 3.1 Слайдер: заменяем .swiper-wrapper на нужные слайды
+      const wrap = document.querySelector('.portfolio-details-slider .swiper-wrapper');
+      if (wrap) {
+        wrap.innerHTML = '';
+        data.images.forEach(src => {
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = SLUG;
+          slide.appendChild(img);
+          wrap.appendChild(slide);
+        });
+      }
+    
+      // 3.2 Заголовки "Portfolio details"
+      const pageTitle = document.querySelector('.page-title h1');
+      const breadcrumbCurrent = document.querySelector('.breadcrumbs .current');
+      if (pageTitle) pageTitle.textContent = getT(`details_${SLUG}_title`) || SLUG;
+      if (breadcrumbCurrent) breadcrumbCurrent.textContent = getT(`details_${SLUG}_title`) || SLUG;
+    
+      // 3.3 Основное описание (несколько абзацев)
+      // Используем ключи details_<slug>_p1, p2, p3, p4 (сколько есть — столько выведем)
+      const descRoot = document.querySelector('.portfolio-description');
+      if (descRoot) {
+        descRoot.innerHTML = ''; // очистим демо-контент
+        const h2 = document.createElement('h2');
+        h2.textContent = getT(`details_${SLUG}_subtitle`) || (getT(`details_${SLUG}_title`) || SLUG);
+        descRoot.appendChild(h2);
+    
+        for (let i = 1; i <= 6; i++) {
+          const k = `details_${SLUG}_p${i}`;
+          const txt = getT(k);
+          if (txt) {
+            const p = document.createElement('p');
+            p.textContent = txt;
+            descRoot.appendChild(p);
+          }
+        }
+      }
+    
+      // 3.4 Блок "Project information"
+      const infoTitle = document.querySelector('.portfolio-info h3');
+      const infoList = document.querySelector('.portfolio-info ul');
+      if (infoTitle) infoTitle.textContent = getT('portfolio_info_title') || 'Project information';
+      if (infoList) {
+        infoList.innerHTML = '';
+        // Категория
+        const liCat = document.createElement('li');
+        const s1 = document.createElement('strong');
+        s1.textContent = getT('portfolio_info_category') || 'Category';
+        liCat.appendChild(s1);
+        liCat.insertAdjacentText('beforeend', ' ' + (getT(`details_${SLUG}_category`) || data.category || ''));
+        infoList.appendChild(liCat);
+    
+        // По желанию — дата, стек, ссылка и т.д. (раскомментируй и добавь ключи)
+        // const liStack = document.createElement('li');
+        // const s2 = document.createElement('strong');
+        // s2.textContent = getT('portfolio_info_stack') || 'Stack';
+        // liStack.appendChild(s2);
+        // liStack.insertAdjacentText('beforeend', ' ' + (getT(`details_${SLUG}_stack`) || ''));
+        // infoList.appendChild(liStack);
+      }
+    
+      // 3.5 Переинициализировать Swiper (если он уже был создан шаблоном)
+      // Т.к. шаблон BootstrapMade инициализирует по .init-swiper, достаточно пересоздать элемент
+      // или, если у тебя есть глобальный метод, вызови его тут.
+      // Если свайпер не обновляется, можно вручную:
+      if (window.swiperInstances && Array.isArray(window.swiperInstances)) {
+        window.swiperInstances.forEach(sw => sw.update && sw.update());
+      }
+    }
+    
+    // -------- 4) Достаём переводы: совместимо с твоим i18n.js --------
+    function getT(key) {
+      // варианты: window.i18n.translations или глобальная CURRENT_TRANSLATIONS
+      if (window.i18n && window.i18n.translations && key in window.i18n.translations) {
+        console.log(window.i18n.translations[key]);
+        return window.i18n.translations[key];
+      }
+      if (window.CURRENT_TRANSLATIONS && key in window.CURRENT_TRANSLATIONS) {
+        return window.CURRENT_TRANSLATIONS[key];
+      }
+      return null;
+    }
+    
+    // Запуск: сначала подождём, пока i18n подтянет язык, затем отрендерим детали
+    document.addEventListener('i18n:ready', renderDetails);
+    document.addEventListener('DOMContentLoaded', () => {
+      // На случай, если i18n уже успел
+      setTimeout(renderDetails, 0);
+    });
+  </script>
+
+</body>
+
+</html>
