@@ -31,6 +31,7 @@
   ======================================================== -->
   </head>
   <body class="index-page">
+    <!-- Языки: справа -->
     <div id="lang-switcher" style="position: fixed; top: 10px; right: 20px; z-index: 999;">
       <button onclick="setLanguage('uz')" class="btn btn-link p-0 mx-1">
         <span class="fi fi-uz" title="Oʻzbek" style="font-size: 1.5rem;"></span>
@@ -40,6 +41,14 @@
       </button>
       <button onclick="setLanguage('en')" class="btn btn-link p-0 mx-1">
         <span class="fi fi-gb" title="English" style="font-size: 1.5rem;"></span>
+      </button>
+    </div>
+
+    <!-- Тема: слева -->
+    <div id="theme-switcher" style="position: fixed; top: 10px; left: 20px; z-index: 10000;">
+      <button id="theme-toggle" class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Toggle color theme" aria-pressed="false" title="Theme">
+        <i class="bi bi-sun icon-sun"></i>
+        <i class="bi bi-moon icon-moon"></i>
       </button>
     </div>
     <header class="header d-flex flex-column justify-content-center" id="header">
@@ -75,7 +84,7 @@
     </header>
     <main class="main">
       <!-- Hero Section -->
-      <section class="hero section light-background" id="hero">
+      <section class="hero section" id="hero">
         <img alt="" src="assets/img/hero-bg.jpg" />
         <div class="container" data-aos="zoom-out">
           <div class="row justify-content-center">
@@ -119,7 +128,7 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4 justify-content-center">
             <div class="col-lg-4">
-              <img alt="" class="img-fluid" src="assets/img/profile-img.png" />
+              <img alt="" class="img-fluid" style="border-radius: 50px;" src="assets/img/profile-img.png" />
             </div>
             <div class="col-lg-8 content">
               <h2 data-i18n="about_role"></h2>
@@ -411,6 +420,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Main JS File -->
     <script defer="True" src="assets/js/i18n.js"></script>
+    <script src="assets/js/theme.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
       function calculateAge(birthdate) {

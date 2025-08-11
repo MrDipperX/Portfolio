@@ -1451,9 +1451,113 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.img-fluid.rounded {
+  border-radius: 50px;
 }
+
+/* === DARK MODE: core variables === */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --background-color: #0b0f14;
+    --surface-color: #131a22;
+    --default-color: #d7dde6;
+    --heading-color: #eaf0f6;
+    --contrast-color: #0b0f14;
+
+    --nav-color: #d7dde6;
+    --nav-hover-color: #ffffff;
+    --nav-dropdown-background-color: #0f151d;
+    --nav-dropdown-color: #d7dde6;
+    --nav-dropdown-hover-color: #ffffff;
+
+    --accent-color: #58a6ff;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background-color: #0b0f14;
+  --surface-color: #131a22;
+  --default-color: #d7dde6;
+  --heading-color: #eaf0f6;
+  --contrast-color: #0b0f14;
+
+  --nav-color: #d7dde6;
+  --nav-hover-color: #ffffff;
+  --nav-dropdown-background-color: #0f151d;
+  --nav-dropdown-color: #d7dde6;
+  --nav-dropdown-hover-color: #ffffff;
+
+  --accent-color: #58a6ff;
+}
+
+/* Smooth transitions (опционально) */
+html, body, .section, .navmenu, .header, .footer {
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+/* === Theme toggle button (одна версия) === */
+.theme-toggle{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  width:40px;height:40px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  background:var(--surface-color);color:var(--default-color);box-shadow:0 2px 6px rgba(0,0,0,.08);
+  position:relative;z-index:10000;
+}
+.theme-toggle:hover{border-color:rgba(127,127,127,.3)}
+.theme-toggle i{font-size:1.2rem}
+.theme-toggle .icon-sun{display:none}
+:root[data-theme="light"] .icon-sun{display:inline-block}
+:root[data-theme="light"] .icon-moon{display:none}
+:root[data-theme="dark"] .icon-sun{display:none}
+:root[data-theme="dark"] .icon-moon{display:inline-block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme]) .icon-sun{display:none}
+  :root:not([data-theme]) .icon-moon{display:inline-block}
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme]) .icon-sun{display:inline-block}
+  :root:not([data-theme]) .icon-moon{display:none}
+}
+
+/* === Neutralize .light-background in dark === */
+:root[data-theme="dark"] .light-background{
+  background-color:var(--background-color)!important;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .light-background{
+    background-color:var(--background-color)!important;
+  }
+}
+/* Hero: не перебиваем картинку */
+:root[data-theme="dark"] #hero.light-background{background-color:transparent!important}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) #hero.light-background{background-color:transparent!important}
+}
+
+/* === Hero dark image swap (img src stays, CSS подменяет) === */
+/* Положи файл: assets/img/hero-bg-dark.png */
+:root[data-theme="dark"] #hero img{content:url("../img/hero-bg-dark.png")}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) #hero img{content:url("../img/hero-bg-dark.png")}
+}
+
+/* === Footer dark styles === */
+:root[data-theme="dark"] .footer{
+  background-color:#131a22!important;color:var(--default-color);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .footer{
+    background-color:#131a22!important;color:var(--default-color);
+  }
+}
+/* Links & social icons: видны сразу, на hover — акцент */
+:root[data-theme="dark"] .footer a{color:var(--accent-color)}
+:root[data-theme="dark"] .footer .social-links a{color:var(--default-color)!important;opacity:1}
+:root[data-theme="dark"] .footer .social-links a:hover{color:var(--accent-color)!important}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .footer a{color:var(--accent-color)}
+  :root:not([data-theme="light"]) .footer .social-links a{color:var(--default-color)!important;opacity:1}
+  :root:not([data-theme="light"]) .footer .social-links a:hover{color:var(--accent-color)!important}
+}
+/* Немного выравниваем глифы */
+.footer .social-links a i{font-size:1.1rem;line-height:1;vertical-align:middle}
