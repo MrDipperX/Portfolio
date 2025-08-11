@@ -55,25 +55,25 @@
     <nav class="navmenu" id="navmenu">
       <ul>
         <li>
-          <a class="active" href="/index.html#hero">
+          <a class="active" href="./index.html#hero">
             <i class="bi bi-house navicon"></i>
             <span data-i18n="nav_home"></span>
           </a>
         </li>
         <li>
-          <a href="/index.html#about">
+          <a href="./index.html#about">
             <i class="bi bi-person navicon"></i>
             <span data-i18n="nav_about"></span>
           </a>
         </li>
         <li>
-          <a href="/index.html#resume">
+          <a href="./index.html#resume">
             <i class="bi bi-file-earmark-text navicon"></i>
             <span data-i18n="nav_resume"></span>
           </a>
         </li>
         <li>
-          <a href="/index.html#portfolio">
+          <a href="./index.html#portfolio">
             <i class="bi bi-images navicon"></i>
             <span data-i18n="nav_portfolio"></span>
           </a>
@@ -360,7 +360,6 @@
     function getT(key) {
       // варианты: window.i18n.translations или глобальная CURRENT_TRANSLATIONS
       if (window.i18n && window.i18n.translations && key in window.i18n.translations) {
-        console.log(window.i18n.translations[key]);
         return window.i18n.translations[key];
       }
       if (window.CURRENT_TRANSLATIONS && key in window.CURRENT_TRANSLATIONS) {
