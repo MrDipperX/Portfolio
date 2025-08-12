@@ -63,6 +63,15 @@
   "service5_text": "PIIMA ta’lim tarmog‘idagi o‘quvchilar ko‘rsatkichlarini tahlil qilish va vizuallashtirish platformasi.",
   "service6_title": "E-ticket foydalanuvchilar xizmati",
   "service6_text": "O‘zbekiston temir yo‘llari bron qilish saytining foydalanuvchilar xizmati.",
+
+  "service7_title": "Gümüsh su",
+  "service7_text": "Ichimlik suvini buyurtma qilishni avtomatlashtiruvchi Telegram-bot — hajm, manzil va yetkazib berish vaqtini tanlash imkoniyati bilan.",
+
+  "service8_title": "Loyalist",
+  "service8_text": "Do‘konlar uchun universal keshbek tizimi B2B-platformasi — har bir hamkor uchun avtomatik ravishda brendli Telegram-bot va veb-ilova yaratiladi.",
+
+  "service9_title": "Turli xil Telegram-botlar",
+  "service9_text": "Maxsus yaratilgan Telegram-botlar to‘plami: o‘quv va ma’lumot beruvchi xizmatlardan tortib biznes va davlat tashkilotlariga mo‘ljallangan yechimlargacha.",
   "footer_text": "G‘oyadan tayyor mahsulotgacha — natija mijozlarni ilhomlantirishi uchun ishlayman.",
 
   "portfolio_details_title": "Loyiha tafsilotlari",
@@ -108,5 +117,26 @@
   "details_ETicket_category": "Veb-ilova",
   "details_ETicket_p1": "O‘zbekiston temir yo‘llari bron qilish sayti uchun foydalanuvchi xizmati.",
   "details_ETicket_p2": "Google, OneID va Telegram orqali ro‘yxatdan o‘tish va kirish imkoniyati joriy qilingan.",
-  "details_ETicket_p3": "Loyihada user-service logikasi ishlab chiqilgan va joriy etilgan."
+  "details_ETicket_p3": "Loyihada user-service logikasi ishlab chiqilgan va joriy etilgan.",
+
+  "details_GumushSu_title": "Gümüsh su",
+  "details_GumushSu_subtitle": "Suv yetkazib berish uchun Telegram-bot",
+  "details_GumushSu_category": "Telegram Bot",
+  "details_GumushSu_p1": "Ichimlik suvini buyurtma qilish jarayonini avtomatlashtiruvchi Telegram-bot. Foydalanuvchi hajmni tanlashi, manzil va yetkazib berish vaqtini ko‘rsatishi mumkin.",
+  "details_GumushSu_p2": "Bot interfeysi oddiy va qulay, xabarnoma tizimi esa buyurtma holatini real vaqt rejimida kuzatishga imkon beradi.",
+  "details_GumushSu_p3": "Administrator tizimi biznes egasiga barcha buyurtmalarni ko‘rish, narxlar va aksiyalarni boshqarish, yetkazib berish yo‘nalishlarini sozlash hamda mijoz so‘rovlariga tezkor javob berish imkonini beradi.",
+
+  "details_Loyalist_title": "Loyalist",
+  "details_Loyalist_subtitle": "B2B keshbek platformasi",
+  "details_Loyalist_category": "Web app / Telegram Bot",
+  "details_Loyalist_p1": "Do‘konlar va xizmatlar uchun universal keshbek tizimini taqdim etuvchi B2B-platforma.",
+  "details_Loyalist_p2": "Har bir hamkor ro‘yxatdan o‘tganda, avtomatik tarzda brendli Telegram-bot va veb-ilova yaratiladi, mijozlar shu orqali keshbek olish va ishlatishlari mumkin.",
+  "details_Loyalist_p3": "Platforma kengaytirish imkoniyatlarini hisobga olgan holda ishlab chiqilgan bo‘lib, yangi do‘konlarni oson qo‘shish va tashqi to‘lov tizimlari hamda CRM bilan integratsiya qilish imkonini beradi.",
+
+  "details_VariousBots_title": "Turli xil Telegram-botlar",
+  "details_VariousBots_subtitle": "Maxsus yechimlar to‘plami",
+  "details_VariousBots_category": "Telegram Bots",
+  "details_VariousBots_p1": "Turli maqsadlar uchun ishlab chiqilgan maxsus botlar to‘plami — o‘quv vositalaridan tortib biznes jarayonlarini avtomatlashtirishgacha.",
+  "details_VariousBots_p2": "Misollar: talabalar uchun dars jadvali va ob-havo prognozini yuboruvchi bot, foydalanuvchi savollarini qabul qilib javob beruvchi bot, PIIMA tizimida imtihon natijalarini olish xizmati, kadastr bo‘yicha mulkni baholash boti va boshqa kichik utilitar yechimlar.",
+  "details_VariousBots_p3": "Barcha botlar moslashuvchan arxitekturaga ega bo‘lib, buyurtmachining aniq talablariga moslashtirilishi, tashqi xizmatlar, ma’lumotlar bazalari va analitika vositalari bilan integratsiya qilinishi mumkin."
 }

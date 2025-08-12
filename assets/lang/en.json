@@ -63,6 +63,15 @@
   "service5_text": "Platform for analyzing and visualizing student performance in the PIIMA education network.",
   "service6_title": "E-ticket User Service",
   "service6_text": "User service for the Uzbekistan Railways booking website.",
+
+  "service7_title": "Gümüsh su",
+  "service7_text": "Telegram bot for automating drinking water orders with options to choose volume, address, and delivery time.",
+
+  "service8_title": "Loyalist",
+  "service8_text": "B2B platform for a universal cashback system for stores, automatically creating a branded Telegram bot with a web app for each partner.",
+
+  "service9_title": "Various Telegram Bots",
+  "service9_text": "A collection of specialized Telegram bots: from educational and informational services to solutions for businesses and government agencies.",
   "footer_text": "From idea to finished product — I work to deliver results that inspire clients.",
 
   "portfolio_details_title": "Portfolio Details",
@@ -108,5 +117,26 @@
   "details_ETicket_category": "Web app",
   "details_ETicket_p1": "User service for the Uzbekistan Railway booking website.",
   "details_ETicket_p2": "Implemented registration and login via Google, OneID, and Telegram.",
-  "details_ETicket_p3": "Developed and integrated the user-service logic as part of the project."
+  "details_ETicket_p3": "Developed and integrated the user-service logic as part of the project.",
+
+  "details_GumushSu_title": "Gümüsh su",
+  "details_GumushSu_subtitle": "Telegram bot for water delivery",
+  "details_GumushSu_category": "Telegram Bot",
+  "details_GumushSu_p1": "A Telegram bot that automates the process of ordering drinking water. Users can select the volume, specify the delivery address, and choose a convenient time.",
+  "details_GumushSu_p2": "The bot has an intuitive interface, and its notification system allows customers to track order status in real time.",
+  "details_GumushSu_p3": "The admin system allows the business owner to view all orders, manage prices and promotions, configure delivery routes, and quickly respond to customer requests.",
+
+  "details_Loyalist_title": "Loyalist",
+  "details_Loyalist_subtitle": "B2B cashback platform",
+  "details_Loyalist_category": "Web app / Telegram Bot",
+  "details_Loyalist_p1": "A B2B platform that provides a universal cashback system for stores and services.",
+  "details_Loyalist_p2": "When a partner registers, a branded Telegram bot with a web application is automatically created, allowing customers to earn and redeem cashback.",
+  "details_Loyalist_p3": "The platform is designed with scalability in mind, enabling easy onboarding of new stores and seamless integration with external payment systems and CRMs.",
+
+  "details_VariousBots_title": "Various Telegram Bots",
+  "details_VariousBots_subtitle": "Collection of specialized solutions",
+  "details_VariousBots_category": "Telegram Bots",
+  "details_VariousBots_p1": "A set of specialized bots developed for different purposes — from educational tools to business process automation.",
+  "details_VariousBots_p2": "Examples: a bot for students with schedules and weather forecasts, a Q&A bot for customer support, a service for retrieving exam results in the PIIMA system, a cadastral bot for property evaluation, and other small utility solutions.",
+  "details_VariousBots_p3": "All bots feature a flexible architecture and can be adapted to specific client needs, including integration with external services, databases, and analytics tools."
 }
